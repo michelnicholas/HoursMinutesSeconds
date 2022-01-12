@@ -1,6 +1,8 @@
 public class SecondsAndMinutes {
 
+    // Constant Value
     private static final String INVALID_VALUE_MESSAGE = "INVALID VALUE";
+
     public static void main(String[] args) {
         System.out.println(getDurationString(69,45));
         System.out.println(getDurationString(3945L));
@@ -9,6 +11,8 @@ public class SecondsAndMinutes {
 
     }
 
+
+    // Converting Minutes to hours and print out hours minutes and seconds
     public static String getDurationString(long minutes, long seconds){
 
 
@@ -37,6 +41,7 @@ public class SecondsAndMinutes {
         return  hourString + " " + minutesString + " " + secondString + " ";
     }
 
+    // Method Overloading remaining seconds added to remaining minutes
     public static String getDurationString(long seconds){
         if (seconds < 0){
             return INVALID_VALUE_MESSAGE;
